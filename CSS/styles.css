@@ -1,3 +1,4 @@
+
 body {
   text-align: center;
   background-image: url('../images/coffee.bean.3.jpg');
@@ -131,6 +132,7 @@ h4 {
   font-weight: 500;
   font-family: montserrat;
   align-content: space-between;
+  padding: 30px 0px 0px;
 }
 
 .container {
@@ -148,13 +150,13 @@ h4 {
   width: 200px;
 }
 
-h4 {
-  padding: 30px 0px 0px;
-}
-
 .featuredimage {
   height: 200px;
   width: 200px;
+}
+
+.featuredimage:hover {
+  opacity: .8;
 }
 
 footer {
@@ -162,16 +164,33 @@ footer {
   margin-bottom: 0px;    
 }
 
+h5 {
+  margin: 0;
+  font-family: montserrat;
+  font-weight: 400;
+}
+
+.connect {
+  border: 3px solid lightgray;
+  background-color: lightgray;
+  opacity: .9;
+}
+
 .media {
   background-color: lightgray;
   opacity: .9;
   display: flex;
   justify-content: center;
-  border: 20px solid lightgray;
+  border: 8px solid lightgray;
 }
 
 .media li {
   margin: auto 25px auto;
+}
+
+ul {
+  margin: 0 0 10px 0;
+  padding: 0;
 }
 
 .media img {
@@ -180,4 +199,31 @@ footer {
 }
 .icon {
   list-style-type: none;
+}
+
+.icon:hover {
+  opacity: .5;
+}
+
+@media screen and (max-width: 800px){
+
+  .navbarLink {
+    width: auto;
+  }
+  
+  .container {
+    flex-direction: column;
+  }  
+
+  .interior {
+    margin-top 5%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .featuredimage {
+    height: 300px;
+    width: 300px;
+    
+  }
 }
